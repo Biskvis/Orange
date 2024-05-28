@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import ReviewCard from "./ReviewCard"
-import reviews from '@/lib/Reviews'  
+import reviews from '@/app/reviews'  
 
 
 export default function ReviewCarouselMB() {

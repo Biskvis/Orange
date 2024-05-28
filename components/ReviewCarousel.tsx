@@ -10,7 +10,7 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
-import reviews from '@/lib/Reviews'  
+import reviews from '@/app/reviews'  
 
 const ReviewCarousel = () => {
     

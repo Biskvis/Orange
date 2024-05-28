@@ -2,32 +2,151 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@media only screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.footer {
+  background: rgb(223,130,0);
+background: -moz-linear-gradient(152deg, rgba(223,130,0,1) 0%, rgba(75,75,75,1) 96%);
+background: -webkit-linear-gradient(152deg, rgba(223,130,0,1) 0%, rgba(75,75,75,1) 96%);
+background: linear-gradient(152deg, rgba(223,130,0,1) 0%, rgba(75,75,75,1) 96%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#df8200",endColorstr="#4b4b4b",GradientType=1);
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color:mintcream;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.orange-list {
+  list-style-image: url('/orange1.png');
+  list-style-position: inside;
+
 }
+
+.hero {
+  background: rgb(208,142,44);
+  background: -moz-radial-gradient(circle, rgba(208,142,44,1) 0%, rgba(255,110,0,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(208,142,44,1) 0%, rgba(255,110,0,1) 100%);
+  background: radial-gradient(circle, rgba(208,142,44,1) 0%, rgba(255,110,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d08e2c",endColorstr="#ff6e00",GradientType=1);
+}
+
+
+.left-section {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(210deg, rgba(255,255,255,1) 56%, rgba(255,127,0,1) 80%);
+  background: -webkit-linear-gradient(210deg, rgba(255,255,255,1) 56%, rgba(255,127,0,1) 80%);
+  background: linear-gradient(210deg, rgba(255,255,255,1) 56%, rgba(255,127,0,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff7f00",GradientType=1);
+}
+.story-section {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(255,170,0,1) 80%);
+  background: -webkit-linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(255,170,0,1) 80%);
+  background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(255,170,0,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffaa00",GradientType=1);
+}
+
+.about-story {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  background: -webkit-linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  background: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f69b24",GradientType=1);
+}
+.about-values {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(347deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  background: -webkit-linear-gradient(347deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  background: linear-gradient(347deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,152,0,1) 80%, rgba(246,155,36,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f69b24",GradientType=1);
+}
+.cta-section {
+  background: rgb(255,127,0);
+  background: -moz-radial-gradient(circle, rgba(255,127,0,1) 21%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,127,0,1) 80%, rgba(255,127,0,1) 80%);
+  background: -webkit-radial-gradient(circle, rgba(255,127,0,1) 21%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,127,0,1) 80%, rgba(255,127,0,1) 80%);
+  background: radial-gradient(circle, rgba(255,127,0,1) 21%, rgba(255,152,0,1) 57.99999999999999%, rgba(255,127,0,1) 80%, rgba(255,127,0,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00",endColorstr="#ff7f00",GradientType=1);
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Padding around the scrollbar thumb */
+}
+
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 20 14.3% 4.1%;
+      --card: 0 0% 100%;
+      --card-foreground: 20 14.3% 4.1%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 20 14.3% 4.1%;
+      --primary: 24.6 95% 53.1%;
+      --primary-foreground: 60 9.1% 97.8%;
+      --secondary: 60 4.8% 95.9%;
+      --secondary-foreground: 24 9.8% 10%;
+      --muted: 60 4.8% 95.9%;
+      --muted-foreground: 25 5.3% 44.7%;
+      --accent: 60 4.8% 95.9%;
+      --accent-foreground: 24 9.8% 10%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 60 9.1% 97.8%;
+      --border: 20 5.9% 90%;
+      --input: 20 5.9% 90%;
+      --ring: 24.6 95% 53.1%;
+      --radius: 0.5rem;
+    }
+  
+    .dark {
+      --background: 20 14.3% 4.1%;
+      --foreground: 60 9.1% 97.8%;
+      --card: 20 14.3% 4.1%;
+      --card-foreground: 60 9.1% 97.8%;
+      --popover: 20 14.3% 4.1%;
+      --popover-foreground: 60 9.1% 97.8%;
+      --primary: 20.5 90.2% 48.2%;
+      --primary-foreground: 60 9.1% 97.8%;
+      --secondary: 12 6.5% 15.1%;
+      --secondary-foreground: 60 9.1% 97.8%;
+      --muted: 12 6.5% 15.1%;
+      --muted-foreground: 24 5.4% 63.9%;
+      --accent: 12 6.5% 15.1%;
+      --accent-foreground: 60 9.1% 97.8%;
+      --destructive: 0 72.2% 50.6%;
+      --destructive-foreground: 60 9.1% 97.8%;
+      --border: 12 6.5% 15.1%;
+      --input: 12 6.5% 15.1%;
+      --ring: 20.5 90.2% 48.2%;
+    }
+  }
+  
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
